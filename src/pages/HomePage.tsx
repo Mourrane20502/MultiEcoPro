@@ -25,7 +25,7 @@ export default function HomePage() {
     <HowItWorksSection />
      <FAQSection />
      <ContactSection />
-     <Footer />
+    
     </div>
   )
 }

@@ -21,9 +21,9 @@ export default function DigitalMarketing() {
             <p className="text-lg text-gray-300">
               Nous sommes spécialisés dans les stratégies qui développent votre activité grâce à :
             </p>
-            <button className="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-medium rounded shadow">
+            <a href="#pricing" className="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-medium rounded shadow">
               Commencer
-            </button>
+            </a>
           </div>
 
           <div className="relative mt-12 md:mt-24 hidden md:block">
