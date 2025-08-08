@@ -8,7 +8,6 @@ import HeroSection from '@/components/topcomponents/HeroSection'
 import HowItWorksSection from '@/components/topcomponents/HowItWorks'
 import ProjectsSection from '@/components/topcomponents/ProjectSection'
 import ServicesSection from '@/components/topcomponents/ServicesSection'
-import Footer from '@/navigation/Footer'
 import MissionValeurs from "../components/topcomponents/Missions";
 
 export default function HomePage() {
