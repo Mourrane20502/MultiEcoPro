@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import {  FaArrowRight, FaHammer, FaSolarPanel, FaBullhorn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import digital from "../../assets/digital.jpg";
+import digital from "../../assets/digitalmarketing.jpg";
 import construction from "../../assets/construction.jpg";
 import energy from "../../assets/energy.jpg";
 

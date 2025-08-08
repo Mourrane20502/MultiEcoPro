@@ -1,10 +1,12 @@
 import digitalHero from "../../assets/digitalHero.jpg";
 import sidePhoto from "../../assets/sidephotos.jpg";
+import HowItWorks from "./component/HowItWorks";
+import PricingPackages from "./component/Pricing";
 import ServicesSection from './component/ServicesSection';
 
 export default function DigitalMarketing() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <div
         className="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${digitalHero})` }}
@@ -41,6 +43,10 @@ export default function DigitalMarketing() {
         </div>
       </div>
   <ServicesSection />
+  <HowItWorks />
+  <PricingPackages />
+
+
 
     </div>
   );
