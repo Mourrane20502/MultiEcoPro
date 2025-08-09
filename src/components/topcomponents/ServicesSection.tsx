@@ -21,7 +21,7 @@ const ServicesSection = () => {
         "Travaux de rénovation",
         "Amélioration de l’isolation",
       ],
-      path: "/audit-renovation",
+      path: "/audit",
     },
     {
       id: 2,
