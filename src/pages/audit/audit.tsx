@@ -283,6 +283,15 @@ const Index = () => {
     ]
   }
 ];
+const openWhatsApp = () => {
+  const phoneNumber = "212706589031";
+  const message = encodeURIComponent(
+    "Salut ! 😊 Je voudrais en savoir plus sur vos services et obtenir un devis. Merci !"
+  );
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(url, "_blank");
+};
+
 
 
   return (
@@ -303,10 +312,16 @@ const Index = () => {
             Optimisez votre confort et réduisez vos factures d'énergie avec nos solutions d'audit et de rénovation énergétique
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="default" size="lg" className="text-lg px-8 py-3 bg-green-600 hover:bg-green-700 text-white shadow-lg">
-              <Phone className="mr-2 h-5 w-5" />
-              Demander un audit
-            </Button>
+           <Button
+  onClick={openWhatsApp}
+  variant="default"
+  size="lg"
+  className="text-lg cursor-pointer px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white shadow-lg"
+>
+  <Phone className="mr-2 h-5 w-5" />
+  Contactez-nous
+</Button>
+
          
           </div>
         </div>
@@ -412,7 +427,7 @@ const Index = () => {
             Contactez-nous dès aujourd'hui pour un audit personnalisé et découvrez vos économies potentielles
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="default" size="lg" className="text-lg cursor-pointer px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white shadow-lg">
+            <Button onClick={openWhatsApp} variant="default" size="lg" className="text-lg cursor-pointer px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white shadow-lg">
               <Phone className="mr-2 h-5 w-5" />
               Contactez-nous
             </Button>

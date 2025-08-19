@@ -5,7 +5,7 @@ export default function PricingPackages() {
       price: "4 000 MAD",
       description: "Page d'atterrissage simple et efficace pour présenter votre activité.",
       features: [
-          "Page d'atterrissage (Landing page)",
+        "Page d'atterrissage (Landing page)",
         "Design responsive et moderne",
         "Formulaire de contact simple",
         "Intégration réseaux sociaux",
@@ -21,7 +21,7 @@ export default function PricingPackages() {
       price: "7 000 MAD",
       description: "Site web multi-pages professionnel pour une présence en ligne complète.",
       features: [
-      "Site multi-pages (jusqu’à 7 pages)",
+        "Site multi-pages (jusqu’à 7 pages)",
         "Design personnalisé et UX optimisé",
         "Formulaire de contact avancé avec notifications",
         "Optimisation SEO avancée",
@@ -40,7 +40,7 @@ export default function PricingPackages() {
       price: "15 000 MAD",
       description: "Solution e-commerce complète avec fonctionnalités avancées et support dédié.",
       features: [
-         "Boutique en ligne complète avec paiement sécurisé",
+        "Boutique en ligne complète avec paiement sécurisé",
         "Nombre illimité de pages & produits",
         "Optimisation SEO avancée + Audit SEO trimestriel",
         "Gestion produits, commandes & clients",
@@ -56,6 +56,15 @@ export default function PricingPackages() {
       popular: false,
     },
   ];
+
+  const openWhatsApp = (packName: string) => {
+    const phoneNumber = "212695592907";
+    const message = encodeURIComponent(
+      `Bonjour, je souhaite obtenir un devis pour le pack "${packName}" avec Multiecopro. Merci de me contacter.`
+    );
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank");
+  };
 
   return (
     <section className="py-20" id="pricing">
@@ -107,16 +116,15 @@ export default function PricingPackages() {
                 ))}
               </ul>
 
-<a
-  href="mailto:mourranemohamed2020@gmail.com"
-  className={`mt-auto inline-block px-8 py-3 rounded-full font-semibold text-white ${
-    popular ? "bg-blue-700 hover:bg-blue-800" : "bg-blue-600 hover:bg-blue-700"
-  } transition-colors`}
-  aria-label={`Choisir le pack ${name}`}
->
-  Choisir
-</a>
-
+              <button
+                onClick={() => openWhatsApp(name)}
+                className={`mt-auto inline-block px-8 py-3 rounded-full font-semibold text-white ${
+                  popular ? "bg-blue-700 hover:bg-blue-800" : "bg-blue-600 hover:bg-blue-700"
+                } transition-colors`}
+                aria-label={`Choisir le pack ${name}`}
+              >
+                Choisir
+              </button>
             </div>
           ))}
         </div>

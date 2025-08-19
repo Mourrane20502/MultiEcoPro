@@ -6,7 +6,7 @@ const ContactSection = () => {
     {
       icon: FaPhone,
       title: "Téléphone",
-      details: ["+212 6 00 00 00 00", "+212 5 22 00 00 00"],
+      details: ["+212 6 95 59 29 07", "+212 70 65 89 031"],
       description: "Appelez-nous directement"
     },
     {

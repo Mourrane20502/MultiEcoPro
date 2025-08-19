@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 import { FaUsers, FaAward, FaHandshake, FaRocket } from "react-icons/fa";
 
 const AboutSectionPage = () => {
+  const openWhatsApp = () => {
+  const phoneNumber = "212706589031";
+  const message = encodeURIComponent(
+    "Salut ! 😊 Je voudrais en savoir plus sur vos services et obtenir un devis. Merci !"
+  );
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(url, "_blank");
+};
+
   const stats = [
     { number: "3+", label: "Ans d'expérience", icon: FaRocket },
     { number: "70+", label: "Projets réalisés", icon: FaAward },
@@ -138,7 +147,7 @@ const AboutSectionPage = () => {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Contactez-nous dès aujourd'hui pour une consultation gratuite et découvrez comment nous pouvons vous aider.
           </p>
-          <motion.button
+          <motion.button    onClick={openWhatsApp}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-blue-600 font-bold py-4 px-8 rounded-xl hover:bg-blue-50 transition-all duration-300"

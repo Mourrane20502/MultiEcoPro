@@ -79,6 +79,16 @@ const ServicesSection = () => {
       scale: 1,
     },
   };
+  const openWhatsApp = () => {
+  const phoneNumber = "212706589031";
+  const message = encodeURIComponent(
+    "Salut ! 😊 Je voudrais en savoir plus sur vos services et obtenir un devis. Merci !"
+  );
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(url, "_blank");
+};
+
+
 
   return (
     <section id="services" className="py-20 relative overflow-hidden">
@@ -219,7 +229,7 @@ const ServicesSection = () => {
           className="text-center mt-16"
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <button onClick={openWhatsApp} className="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               Demander un devis gratuit
             </button>
           </motion.div>

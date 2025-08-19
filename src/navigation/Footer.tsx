@@ -34,7 +34,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Contact</h4>
           <ul className="text-sm space-y-2 text-gray-300">
             <li>📍 Casablanca, Maroc</li>
-            <li>📞 +212 6 12 34 56 78</li>
+            <li>📞 +212 706-589031</li>
             <li>✉️ contact@multiecopro.ma</li>
           </ul>
         </div>
